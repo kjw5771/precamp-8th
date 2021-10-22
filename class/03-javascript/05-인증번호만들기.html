@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <title>인증번호만들기</title>
+    <script>
+        function hi(){
+            document.getElementById("aaa").innerText = "반갑습니다"
+        }
+        function getToken(){
+            const token = String(Math.floor(Math.random() * 1000000)).padStart(6,"0")
+            document.getElementById("111").innerText = token             
+        }
+
+    </script>
+</head>
+<body>
+
+    <div id="aaa">안녕하세요</div>
+
+    <button onclick="hi()">ㅋㅋㅋㅋ</button>
+
+    
+
+    <div id="111">000000</div>
+
+
+    <button onclick="getToken()">인증번호 전송</button>
+
+</body>
+</html>
